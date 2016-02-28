@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>GameV0.1</title>
+  
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+  
+  <style>
+  #myCanvas {
+	   border: 3px solid silver;
+	   display: block;
+       cursor: pointer;
+}
+.btn {
+position:absolute;
+z-index:100;
+border: 1px solid silver;
+background: orange;
+width: 120px;
+height: 40px;
+font-size: 20px;
+margin:300px 0 0 340px;
+cursor:pointer;
+display:none;
+}
+</style>
+
+</head>
+<body>
+<input  id = "btn1" type="button" value = "Play again?" class = "btn" onclick = "game.restart();"> </input>
+    <canvas id="myCanvas" width="800" height="540"></canvas>
+
+</body>
+</html>
